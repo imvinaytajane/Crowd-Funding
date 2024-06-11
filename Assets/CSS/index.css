@@ -12,11 +12,11 @@
     --first-color-alt: hsl(79, 67%, 52%);
     --first-color-dark: hsl(79, 63%, 50%);
     --first-color-gray: hsl(79, 6%, 64%);
-    --title-color: hsl(180, 4%, 98%);
+    --title-color: hsl(0, 0%, 0%);
     --title-color-black: hsl(180, 4%, 12%);
     --text-color: hsl(180, 4%, 72%);
     --text-color-light: hsl(180, 4%, 65%);
-    --body-color: hsl(180, 12%, 8%);
+    --body-color: hsl(0, 0%, 100%);
 
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
@@ -158,7 +158,33 @@ img {
     cursor: pointer;
 }
 
+/* Home Section End */
 
+/* Project Details Section Start */
+
+/* Project Details Section End */
+
+
+/* Our Team Section Start */
+
+/* Our Team Section End  */
+
+
+
+/* Contact Section Start */
+
+/* Contact Section End  */
+
+
+
+
+
+
+
+
+
+
+/* Responsive Screens */
 @media screen and (max-width: 1023px) {
     .nav__menu {
         position: fixed;
