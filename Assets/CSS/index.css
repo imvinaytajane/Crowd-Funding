@@ -99,6 +99,10 @@ img {
     height: auto;
 }
 
+.main-container{
+    padding: 10%;
+}
+
 .nav__buttons {
     display: flex;
     align-items: center;
@@ -162,6 +166,40 @@ img {
 
 /* Project Details Section Start */
 
+.project-section {
+    display: flex;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+}
+
+.Youtube-video {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+.Youtube-video iframe{
+
+}
+.project-detail {
+    flex: 2;
+    padding: 20px;
+    color: black;
+    min-width: 300px;
+}
+.project-detail h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.project-detail p {
+    /* line-height: 1.6; */
+}
+
 /* Project Details Section End */
 
 
@@ -172,6 +210,11 @@ img {
 
 
 /* Contact Section Start */
+.contact{
+    background-color: black;
+    text-align: center;
+    height: 100px;
+}
 
 /* Contact Section End  */
 
