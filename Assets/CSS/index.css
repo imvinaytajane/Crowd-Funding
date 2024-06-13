@@ -252,7 +252,7 @@ img {
     border-right: 1px solid #ccc;
 }
 
-.Youtube-video iframe {}
+
 
 .project-detail {
     flex: 2;
@@ -266,9 +266,6 @@ img {
     margin-bottom: 20px;
 }
 
-.project-detail p {
-    /* line-height: 1.6; */
-}
 
 /* Project Details Section End */
 
@@ -280,57 +277,151 @@ img {
     text-align: center;
     margin-top: 20px;
 }
-.team-cards{
-    flex-wrap: wrap;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 50px;
 
-    position: relative;
-    display: flex;
+.team-cards{
+	display: flex;
+	flex-wrap: wrap;
+
+	position: relative;
     justify-content: center;
     align-items: center;
     z-index: 1;
+    margin: 20px;
 }
 
-.team{ 
-    /* width: 200px;
-    height: 300px;
-    margin: 5px; */
-    position: relative;
+label {
+	display: block;
+	/* position: absolute; */
+	/* top: 50%;
+	left: 50%; */
+	width: 280px;
+	height: 350px;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	/* transform: translate(-50%, -50%); */
+	cursor: pointer;
+	margin: 13px;
+
+}
+
+.flip-card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease-in-out;
+	z-index: 1;
+
+	
+}
+
+.flip-card .front,
+.flip-card .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: #fff;
+	backface-visibility: hidden;
+	border-radius: 0 20px 0 20px;
+
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     background: rgb(255,255, 255,0.1);
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    
-    
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    padding: 25px;
-    margin: 10px;
-    }
-
-.team-img {
-    display: block;
-    width: 75%;
-    padding-top: 10px;
-    border-radius: 50%;
-    margin: auto;
 }
 
-.team-cards a{
-    background-color: rgb(237, 237, 237);
-    padding:0px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 13px;
+.flip-card .back {
+	transform: rotateX(180deg);
+	color: #000;
+	background: #fff;
+
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgb(255,255, 255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
+
+label:hover .flip-card {
+	transform: rotateX(2deg);
+	box-shadow: 0 20px 20px rgba(50, 60, 60, 0.2);
+}
+
+input {
+	display: none;
+}
+
+:checked + .flip-card {
+	transform: rotateX(180deg);
+}
+label:hover :checked + .flip-card {
+	transform: rotateX(175deg);
+	box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+.front img {
+	width: 110px;
+	height: 110px;
+	margin: 30px 0 20px 0;
+	border-radius: 50%;
+}
+
+.front h1 {
+	font-size: 30px;
+	color: #499bef;
+	margin: 0;
+}
+.front h2 {
+	font-size: 18px;
+	color: #4e699d;
+	margin: 12px 0 12px 0;
+}
+
+.front b {
+	font-size: 14px;
+	color: #424752;
+	margin: 0 0 35px 0;
+	display: block;
+}
+
+.front p,
+.back .click {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.back h1 {
+	color: #424752;
+	margin: 30px 0 0 0;
+}
+
+hr {
+	width: 180px;
+	margin: 15px auto 10px auto;
+}
+
+.back p {
+	font-size: 16px;
+	color: #000;
+	padding: 0 18px;
+	line-height: 30px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Our Team Section End  */
 
