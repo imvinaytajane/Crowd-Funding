@@ -301,7 +301,10 @@ img {
     width: 85%;
     background-color: #ce0d3a;
     animation: progressAnimation 6s;
+
+    
 }
+
 
 @keyframes progressAnimation {
     0% {
@@ -388,7 +391,7 @@ img {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    border-right: 1px solid #ccc;
+    width: 100%;
 }
 
 
@@ -398,6 +401,7 @@ img {
     padding: 20px;
     color: black;
     min-width: 300px;
+    border-right: 1px solid #ccc;
 }
 
 .project-detail h1 {
@@ -994,6 +998,13 @@ textarea.input {
         width: 3.25rem;
     }
 }
+@media screen and (max-width: 1023px) {
+    .project-detail {
+    border-right:0px;
+    border-bottom: 1px solid #ccc;
+}
+
+}
 
 @media screen and (min-width: 768px) {
     .nav__menu {
@@ -1053,6 +1064,7 @@ textarea.input {
     .home__title {
         font-size: var(--biggest-font-size);
     }
+
 }
 
 @media screen and (min-width: 1150px) {
