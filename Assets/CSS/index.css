@@ -74,11 +74,6 @@ input {
     font-size: var(--normal-font-size);
 }
 
-body {
-    background-color: var(--body-color);
-    color: var(--text-color);
-}
-
 h1,
 h2,
 h3 {
@@ -306,7 +301,10 @@ img {
     width: 85%;
     background-color: #ce0d3a;
     animation: progressAnimation 6s;
+
+    
 }
+
 
 @keyframes progressAnimation {
     0% {
@@ -393,7 +391,7 @@ img {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    border-right: 1px solid #ccc;
+    width: 100%;
 }
 
 
@@ -403,6 +401,7 @@ img {
     padding: 20px;
     color: black;
     min-width: 300px;
+    border-right: 1px solid #ccc;
 }
 
 .project-detail h1 {
@@ -502,31 +501,40 @@ img {
     transform: rotateX(175deg);
     box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
 }
-
+.front{
+    background: linear-gradient(to bottom, #0099ff  0%,#0099ff  30%, white 30%, white 100%) !important; 
+}
 .front img {
     width: 110px;
     height: 110px;
     margin: 30px 0 20px 0;
     border-radius: 50%;
+    border: 5px solid white;
 }
 
 .front h1 {
     font-size: 30px;
-    color: #499bef;
     margin: 0;
 }
 
 .front h2 {
-    font-size: 18px;
-    color: #4e699d;
-    margin: 12px 0 12px 0;
+    font-size: 15px;
+    /* margin: 5px 0 5px 0; */
 }
+.front-icons{
+    color: black;
+    font-size: 30px;
+    margin-top: 10px;
 
-.front b {
-    font-size: 14px;
-    color: #424752;
-    margin: 0 0 35px 0;
-    display: block;
+}
+.front-more{
+    background-color: #0099ff ;
+    width: 100px;
+    font-size: 15px !important;
+    border-radius: 15px;
+    color: white;
+    padding: 6px;
+    margin: 15px auto 5px auto;
 }
 
 .front p,
@@ -535,32 +543,31 @@ img {
     font-weight: 600;
 }
 
-.back h1 {
-    color: #424752;
-    margin: 30px 0 0 0;
+.back{
+    background-color: #0099ff !important;
+}
+.back h1{
+    font-size: 24px;
+    padding: 0px;
 }
 
 hr {
     width: 180px;
-    margin: 15px auto 10px auto;
+    margin: 5px auto 10px auto;
 }
 
-.back p {
-    font-size: 16px;
+.back > p {
     color: #000;
     padding: 0 18px;
-    line-height: 30px;
     text-align: center;
     margin: 0 auto;
 }
-
-
-
-
-
-
-
-
+.back-about{
+    margin-top: 15px !important;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
 
 
 
@@ -991,6 +998,13 @@ textarea.input {
         width: 3.25rem;
     }
 }
+@media screen and (max-width: 1023px) {
+    .project-detail {
+    border-right:0px;
+    border-bottom: 1px solid #ccc;
+}
+
+}
 
 @media screen and (min-width: 768px) {
     .nav__menu {
@@ -1050,6 +1064,7 @@ textarea.input {
     .home__title {
         font-size: var(--biggest-font-size);
     }
+
 }
 
 @media screen and (min-width: 1150px) {
