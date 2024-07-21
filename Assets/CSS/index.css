@@ -69,6 +69,17 @@ html {
     scroll-behavior: smooth;
 }
 
+body{ 
+    background-image: 
+    url(../Images/bg3.jpg)
+    /* url(../Images/bg2.jpg) */
+    ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
 body,
 button,
 input {
@@ -234,7 +245,7 @@ img {
 .home__subtitle {
     font-size: 3.5rem;
     -webkit-text-stroke: 1px var(--text-color);
-    color: transparent;
+    color: white;
 }
 
 .home__title {
@@ -1013,8 +1024,22 @@ textarea.input {
 @media screen and (max-width: 1023px) {
     .project-detail {
     border-right:0px;
-    border-bottom: 1px solid #ccc;
-}
+    border-bottom: 1px solid #ccc;}
+
+    body{
+        background-image: url(../Images/smbg.jpg);
+    }
+    .home__subtitle{
+        font-size: 30px;
+    }
+    .section{
+        padding-top: 13px;
+        font-weight: 800;
+    }
+    /* .home__title{
+        font-size: 50px;
+    } */
+
 
 }
 
