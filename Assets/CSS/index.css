@@ -68,6 +68,12 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    background-image: url(../Images/bg3.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 body,
 button,
